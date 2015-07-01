@@ -1,0 +1,977 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA031EE0139D720200F7B374 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA031EDF139D720200F7B374 /* logo.png */; };
+		EA0BB9A11391DE5400A0B777 /* icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0BB9A01391DE5400A0B777 /* icon-512.png */; };
+		EA34F6AD138F0D32000EB392 /* deactivate.png in Resources */ = {isa = PBXBuildFile; fileRef = EA34F6AA138F0D30000EB392 /* deactivate.png */; };
+		EA34F6AE138F0D32000EB392 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = EA34F6AB138F0D31000EB392 /* add.png */; };
+		EA34F6AF138F0D32000EB392 /* activate.png in Resources */ = {isa = PBXBuildFile; fileRef = EA34F6AC138F0D32000EB392 /* activate.png */; };
+		EA3C8DDB14AF297A00329F56 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA3C8DDA14AF297A00329F56 /* libz.dylib */; };
+		EA5257F01378A7CD008202AC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257EF1378A7CD008202AC /* MBProgressHUD.m */; };
+		EA5258071378A826008202AC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257F41378A826008202AC /* ASIAuthenticationDialog.m */; };
+		EA5258081378A826008202AC /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257F71378A826008202AC /* ASIDataCompressor.m */; };
+		EA5258091378A826008202AC /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257F91378A826008202AC /* ASIDataDecompressor.m */; };
+		EA52580A1378A826008202AC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257FB1378A826008202AC /* ASIDownloadCache.m */; };
+		EA52580B1378A826008202AC /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257FD1378A826008202AC /* ASIFormDataRequest.m */; };
+		EA52580C1378A826008202AC /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5257FF1378A826008202AC /* ASIHTTPRequest.m */; };
+		EA52580D1378A826008202AC /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5258031378A826008202AC /* ASIInputStream.m */; };
+		EA52580E1378A826008202AC /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5258051378A826008202AC /* ASINetworkQueue.m */; };
+		EA5258111378A83B008202AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5258101378A83B008202AC /* Reachability.m */; };
+		EA5258161378A84C008202AC /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5258131378A84C008202AC /* CoreDataTableViewController.m */; };
+		EA5258171378A84C008202AC /* Prefs.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5258151378A84C008202AC /* Prefs.m */; };
+		EA5258191378A95F008202AC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5258181378A95F008202AC /* CFNetwork.framework */; };
+		EA52581B1378A968008202AC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52581A1378A968008202AC /* SystemConfiguration.framework */; };
+		EA52581D1378A971008202AC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA52581C1378A971008202AC /* MobileCoreServices.framework */; };
+		EA5D634C1350A7460023D35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D634B1350A7460023D35E /* UIKit.framework */; };
+		EA5D634E1350A7460023D35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D634D1350A7460023D35E /* Foundation.framework */; };
+		EA5D63501350A7460023D35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D634F1350A7460023D35E /* CoreGraphics.framework */; };
+		EA5D63521350A7460023D35E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D63511350A7460023D35E /* CoreData.framework */; };
+		EA5D63581350A7460023D35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA5D63561350A7460023D35E /* InfoPlist.strings */; };
+		EA5D635B1350A7460023D35E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D635A1350A7460023D35E /* main.m */; };
+		EA5D635E1350A7460023D35E /* InstaDailyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D635D1350A7460023D35E /* InstaDailyAppDelegate.m */; };
+		EA5D63611350A7460023D35E /* InstaDaily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA5D635F1350A7460023D35E /* InstaDaily.xcdatamodeld */; };
+		EA5D63651350A7460023D35E /* InstaDailyAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D63641350A7460023D35E /* InstaDailyAppDelegate_iPhone.m */; };
+		EA5D63681350A7460023D35E /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5D63661350A7460023D35E /* MainWindow_iPhone.xib */; };
+		EA5D636C1350A7460023D35E /* InstaDailyAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D636B1350A7460023D35E /* InstaDailyAppDelegate_iPad.m */; };
+		EA5D636F1350A7460023D35E /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA5D636D1350A7460023D35E /* MainWindow_iPad.xib */; };
+		EA5D63761350A7470023D35E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D634B1350A7460023D35E /* UIKit.framework */; };
+		EA5D63771350A7470023D35E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D634D1350A7460023D35E /* Foundation.framework */; };
+		EA5D63781350A7470023D35E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D634F1350A7460023D35E /* CoreGraphics.framework */; };
+		EA5D63791350A7470023D35E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5D63511350A7460023D35E /* CoreData.framework */; };
+		EA5D63811350A7470023D35E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA5D637F1350A7470023D35E /* InfoPlist.strings */; };
+		EA5D63841350A7470023D35E /* InstaDailyTests.h in Resources */ = {isa = PBXBuildFile; fileRef = EA5D63831350A7470023D35E /* InstaDailyTests.h */; };
+		EA5D63861350A7470023D35E /* InstaDailyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA5D63851350A7470023D35E /* InstaDailyTests.m */; };
+		EA63319B13903F1B00DE2447 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EA63319A13903F1B00DE2447 /* Default.png */; };
+		EA63319D13903F2900DE2447 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EA63319C13903F2900DE2447 /* Default@2x.png */; };
+		EA6A110113917507005905F7 /* no-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = EA6A110013917507005905F7 /* no-photo.png */; };
+		EA7FFC9C137C97D70067C30A /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7FFC9A137C97D70067C30A /* PhotoView.m */; };
+		EA7FFC9D137C97D70067C30A /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA7FFC9B137C97D70067C30A /* PhotoView.xib */; };
+		EA9E2FED138C64A900CF2AB5 /* 12-eye.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E2FE6138C64A900CF2AB5 /* 12-eye.png */; };
+		EA9E2FF0138C64A900CF2AB5 /* 42-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E2FE9138C64A900CF2AB5 /* 42-photos.png */; };
+		EA9E2FF1138C64A900CF2AB5 /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E2FEA138C64A900CF2AB5 /* 53-house.png */; };
+		EA9E2FF2138C64A900CF2AB5 /* 85-trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E2FEB138C64A900CF2AB5 /* 85-trophy.png */; };
+		EA9E2FF3138C64A900CF2AB5 /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E2FEC138C64A900CF2AB5 /* 111-user.png */; };
+		EA9E3019138D483700CF2AB5 /* VoteInviteView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9E3017138D483700CF2AB5 /* VoteInviteView.m */; };
+		EA9E301A138D483700CF2AB5 /* VoteInviteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3018138D483700CF2AB5 /* VoteInviteView.xib */; };
+		EA9E3025138D572400CF2AB5 /* login_instagram_light.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3024138D572400CF2AB5 /* login_instagram_light.png */; };
+		EA9E3028138D607F00CF2AB5 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3026138D607F00CF2AB5 /* down.png */; };
+		EA9E3029138D607F00CF2AB5 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E3027138D607F00CF2AB5 /* up.png */; };
+		EA9E303C138D756D00CF2AB5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E303B138D756D00CF2AB5 /* icon.png */; };
+		EA9E303E138D757600CF2AB5 /* icon-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = EA9E303D138D757600CF2AB5 /* icon-retina.png */; };
+		EAAA3007138C53E600520FDB /* login_instagram_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = EAAA3005138C53E600520FDB /* login_instagram_dark.png */; };
+		EAB828F7148E214500070216 /* YAJLiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB828F6148E214500070216 /* YAJLiOS.framework */; };
+		EABF5872137C8C4400C04326 /* FirstRunView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF5870137C8C4400C04326 /* FirstRunView.m */; };
+		EABF5873137C8C4400C04326 /* FirstRunView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABF5871137C8C4400C04326 /* FirstRunView.xib */; };
+		EABF5877137C8C6700C04326 /* SubjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF5875137C8C6700C04326 /* SubjectView.m */; };
+		EABF5878137C8C6700C04326 /* SubjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABF5876137C8C6700C04326 /* SubjectView.xib */; };
+		EABF587C137C8C7900C04326 /* VoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF587A137C8C7900C04326 /* VoteView.m */; };
+		EABF587D137C8C7900C04326 /* VoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABF587B137C8C7900C04326 /* VoteView.xib */; };
+		EABF5881137C8C8A00C04326 /* MyPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF587F137C8C8A00C04326 /* MyPhotosView.m */; };
+		EABF5882137C8C8A00C04326 /* MyPhotosView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABF5880137C8C8A00C04326 /* MyPhotosView.xib */; };
+		EABF5886137C8C9700C04326 /* ProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF5884137C8C9700C04326 /* ProfileView.m */; };
+		EABF5887137C8C9700C04326 /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABF5885137C8C9700C04326 /* ProfileView.xib */; };
+		EABF588B137C8CA300C04326 /* LeaderboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = EABF5889137C8CA300C04326 /* LeaderboardView.m */; };
+		EABF588C137C8CA300C04326 /* LeaderboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EABF588A137C8CA300C04326 /* LeaderboardView.xib */; };
+		EACC058E1380300A00DF9C6E /* ServerConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = EACC058D1380300900DF9C6E /* ServerConnect.m */; };
+		EACC05B11381D87300DF9C6E /* 37x-Checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = EACC05B01381D87200DF9C6E /* 37x-Checkmark.png */; };
+		EACC06221385D3B900DF9C6E /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EACC06211385D3B800DF9C6E /* libGoogleAnalytics.a */; };
+		EACC06241385D3D900DF9C6E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EACC06231385D3D800DF9C6E /* libsqlite3.0.dylib */; };
+		EACC06381387D4CD00DF9C6E /* ProfileSubjectView.m in Sources */ = {isa = PBXBuildFile; fileRef = EACC06361387D4CD00DF9C6E /* ProfileSubjectView.m */; };
+		EACC06391387D4CD00DF9C6E /* ProfileSubjectView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EACC06371387D4CD00DF9C6E /* ProfileSubjectView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA5D637A1350A7470023D35E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA5D633E1350A7450023D35E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA5D63461350A7460023D35E;
+			remoteInfo = InstaDaily;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA031EDF139D720200F7B374 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EA0BB9A01391DE5400A0B777 /* icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-512.png"; path = "../icon-512.png"; sourceTree = "<group>"; };
+		EA34F6AA138F0D30000EB392 /* deactivate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deactivate.png; sourceTree = "<group>"; };
+		EA34F6AB138F0D31000EB392 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		EA34F6AC138F0D32000EB392 /* activate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = activate.png; sourceTree = "<group>"; };
+		EA3C8DDA14AF297A00329F56 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EA5257EE1378A7CD008202AC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		EA5257EF1378A7CD008202AC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		EA5257F31378A826008202AC /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		EA5257F41378A826008202AC /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		EA5257F51378A826008202AC /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		EA5257F61378A826008202AC /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		EA5257F71378A826008202AC /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		EA5257F81378A826008202AC /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		EA5257F91378A826008202AC /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		EA5257FA1378A826008202AC /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		EA5257FB1378A826008202AC /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		EA5257FC1378A826008202AC /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		EA5257FD1378A826008202AC /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		EA5257FE1378A826008202AC /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		EA5257FF1378A826008202AC /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		EA5258001378A826008202AC /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		EA5258011378A826008202AC /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		EA5258021378A826008202AC /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		EA5258031378A826008202AC /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		EA5258041378A826008202AC /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		EA5258051378A826008202AC /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		EA5258061378A826008202AC /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		EA52580F1378A83B008202AC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EA5258101378A83B008202AC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EA5258121378A84C008202AC /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		EA5258131378A84C008202AC /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		EA5258141378A84C008202AC /* Prefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefs.h; sourceTree = "<group>"; };
+		EA5258151378A84C008202AC /* Prefs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prefs.m; sourceTree = "<group>"; };
+		EA5258181378A95F008202AC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EA52581A1378A968008202AC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EA52581C1378A971008202AC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EA52581E1378A97B008202AC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA52581F1378A98B008202AC /* libz.1.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.3.dylib; path = usr/lib/libz.1.2.3.dylib; sourceTree = SDKROOT; };
+		EA5D63471350A7460023D35E /* InstaDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5D634B1350A7460023D35E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA5D634D1350A7460023D35E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA5D634F1350A7460023D35E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA5D63511350A7460023D35E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EA5D63551350A7460023D35E /* InstaDaily-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaDaily-Info.plist"; sourceTree = "<group>"; };
+		EA5D63571350A7460023D35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA5D63591350A7460023D35E /* InstaDaily-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaDaily-Prefix.pch"; sourceTree = "<group>"; };
+		EA5D635A1350A7460023D35E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA5D635C1350A7460023D35E /* InstaDailyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaDailyAppDelegate.h; sourceTree = "<group>"; };
+		EA5D635D1350A7460023D35E /* InstaDailyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaDailyAppDelegate.m; sourceTree = "<group>"; };
+		EA5D63601350A7460023D35E /* InstaDaily.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InstaDaily.xcdatamodel; sourceTree = "<group>"; };
+		EA5D63631350A7460023D35E /* InstaDailyAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InstaDailyAppDelegate_iPhone.h; path = iPhone/InstaDailyAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		EA5D63641350A7460023D35E /* InstaDailyAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InstaDailyAppDelegate_iPhone.m; path = iPhone/InstaDailyAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		EA5D63671350A7460023D35E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		EA5D636A1350A7460023D35E /* InstaDailyAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InstaDailyAppDelegate_iPad.h; path = iPad/InstaDailyAppDelegate_iPad.h; sourceTree = "<group>"; };
+		EA5D636B1350A7460023D35E /* InstaDailyAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = InstaDailyAppDelegate_iPad.m; path = iPad/InstaDailyAppDelegate_iPad.m; sourceTree = "<group>"; };
+		EA5D636E1350A7460023D35E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		EA5D63751350A7470023D35E /* InstaDailyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaDailyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5D637E1350A7470023D35E /* InstaDailyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaDailyTests-Info.plist"; sourceTree = "<group>"; };
+		EA5D63801350A7470023D35E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA5D63821350A7470023D35E /* InstaDailyTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InstaDailyTests-Prefix.pch"; sourceTree = "<group>"; };
+		EA5D63831350A7470023D35E /* InstaDailyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstaDailyTests.h; sourceTree = "<group>"; };
+		EA5D63851350A7470023D35E /* InstaDailyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaDailyTests.m; sourceTree = "<group>"; };
+		EA63319A13903F1B00DE2447 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		EA63319C13903F2900DE2447 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		EA6A110013917507005905F7 /* no-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "no-photo.png"; path = "../no-photo.png"; sourceTree = "<group>"; };
+		EA7FFC99137C97D70067C30A /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
+		EA7FFC9A137C97D70067C30A /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
+		EA7FFC9B137C97D70067C30A /* PhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		EA9E2FE6138C64A900CF2AB5 /* 12-eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "12-eye.png"; sourceTree = "<group>"; };
+		EA9E2FE9138C64A900CF2AB5 /* 42-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "42-photos.png"; sourceTree = "<group>"; };
+		EA9E2FEA138C64A900CF2AB5 /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
+		EA9E2FEB138C64A900CF2AB5 /* 85-trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "85-trophy.png"; sourceTree = "<group>"; };
+		EA9E2FEC138C64A900CF2AB5 /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
+		EA9E3016138D483700CF2AB5 /* VoteInviteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteInviteView.h; sourceTree = "<group>"; };
+		EA9E3017138D483700CF2AB5 /* VoteInviteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteInviteView.m; sourceTree = "<group>"; };
+		EA9E3018138D483700CF2AB5 /* VoteInviteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoteInviteView.xib; sourceTree = "<group>"; };
+		EA9E3024138D572400CF2AB5 /* login_instagram_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_instagram_light.png; sourceTree = "<group>"; };
+		EA9E3026138D607F00CF2AB5 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		EA9E3027138D607F00CF2AB5 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		EA9E303B138D756D00CF2AB5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
+		EA9E303D138D757600CF2AB5 /* icon-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-retina.png"; path = "../icon-retina.png"; sourceTree = "<group>"; };
+		EAAA3005138C53E600520FDB /* login_instagram_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_instagram_dark.png; sourceTree = "<group>"; };
+		EAB828F6148E214500070216 /* YAJLiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = YAJLiOS.framework; sourceTree = "<group>"; };
+		EABF586F137C8C4400C04326 /* FirstRunView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstRunView.h; sourceTree = "<group>"; };
+		EABF5870137C8C4400C04326 /* FirstRunView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstRunView.m; sourceTree = "<group>"; };
+		EABF5871137C8C4400C04326 /* FirstRunView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstRunView.xib; sourceTree = "<group>"; };
+		EABF5874137C8C6700C04326 /* SubjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectView.h; sourceTree = "<group>"; };
+		EABF5875137C8C6700C04326 /* SubjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectView.m; sourceTree = "<group>"; };
+		EABF5876137C8C6700C04326 /* SubjectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubjectView.xib; sourceTree = "<group>"; };
+		EABF5879137C8C7900C04326 /* VoteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteView.h; sourceTree = "<group>"; };
+		EABF587A137C8C7900C04326 /* VoteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteView.m; sourceTree = "<group>"; };
+		EABF587B137C8C7900C04326 /* VoteView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoteView.xib; sourceTree = "<group>"; };
+		EABF587E137C8C8A00C04326 /* MyPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhotosView.h; sourceTree = "<group>"; };
+		EABF587F137C8C8A00C04326 /* MyPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhotosView.m; sourceTree = "<group>"; };
+		EABF5880137C8C8A00C04326 /* MyPhotosView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPhotosView.xib; sourceTree = "<group>"; };
+		EABF5883137C8C9700C04326 /* ProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileView.h; sourceTree = "<group>"; };
+		EABF5884137C8C9700C04326 /* ProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileView.m; sourceTree = "<group>"; };
+		EABF5885137C8C9700C04326 /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		EABF5888137C8CA300C04326 /* LeaderboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderboardView.h; sourceTree = "<group>"; };
+		EABF5889137C8CA300C04326 /* LeaderboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderboardView.m; sourceTree = "<group>"; };
+		EABF588A137C8CA300C04326 /* LeaderboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardView.xib; sourceTree = "<group>"; };
+		EACC058C1380300900DF9C6E /* ServerConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerConnect.h; sourceTree = "<group>"; };
+		EACC058D1380300900DF9C6E /* ServerConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerConnect.m; sourceTree = "<group>"; };
+		EACC05B01381D87200DF9C6E /* 37x-Checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "37x-Checkmark.png"; sourceTree = "<group>"; };
+		EACC06201385D3B800DF9C6E /* GANTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GANTracker.h; sourceTree = "<group>"; };
+		EACC06211385D3B800DF9C6E /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = InstaDaily/libGoogleAnalytics.a; sourceTree = "<group>"; };
+		EACC06231385D3D800DF9C6E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		EACC06351387D4CD00DF9C6E /* ProfileSubjectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileSubjectView.h; sourceTree = "<group>"; };
+		EACC06361387D4CD00DF9C6E /* ProfileSubjectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileSubjectView.m; sourceTree = "<group>"; };
+		EACC06371387D4CD00DF9C6E /* ProfileSubjectView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileSubjectView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA5D63441350A7460023D35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA3C8DDB14AF297A00329F56 /* libz.dylib in Frameworks */,
+				EACC06241385D3D900DF9C6E /* libsqlite3.0.dylib in Frameworks */,
+				EA5D63501350A7460023D35E /* CoreGraphics.framework in Frameworks */,
+				EA52581D1378A971008202AC /* MobileCoreServices.framework in Frameworks */,
+				EA52581B1378A968008202AC /* SystemConfiguration.framework in Frameworks */,
+				EA5258191378A95F008202AC /* CFNetwork.framework in Frameworks */,
+				EA5D634C1350A7460023D35E /* UIKit.framework in Frameworks */,
+				EA5D634E1350A7460023D35E /* Foundation.framework in Frameworks */,
+				EA5D63521350A7460023D35E /* CoreData.framework in Frameworks */,
+				EACC06221385D3B900DF9C6E /* libGoogleAnalytics.a in Frameworks */,
+				EAB828F7148E214500070216 /* YAJLiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D63711350A7470023D35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D63761350A7470023D35E /* UIKit.framework in Frameworks */,
+				EA5D63771350A7470023D35E /* Foundation.framework in Frameworks */,
+				EA5D63781350A7470023D35E /* CoreGraphics.framework in Frameworks */,
+				EA5D63791350A7470023D35E /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA5257F21378A813008202AC /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				EA5257F31378A826008202AC /* ASIAuthenticationDialog.h */,
+				EA5257F41378A826008202AC /* ASIAuthenticationDialog.m */,
+				EA5257F51378A826008202AC /* ASICacheDelegate.h */,
+				EA5257F61378A826008202AC /* ASIDataCompressor.h */,
+				EA5257F71378A826008202AC /* ASIDataCompressor.m */,
+				EA5257F81378A826008202AC /* ASIDataDecompressor.h */,
+				EA5257F91378A826008202AC /* ASIDataDecompressor.m */,
+				EA5257FA1378A826008202AC /* ASIDownloadCache.h */,
+				EA5257FB1378A826008202AC /* ASIDownloadCache.m */,
+				EA5257FC1378A826008202AC /* ASIFormDataRequest.h */,
+				EA5257FD1378A826008202AC /* ASIFormDataRequest.m */,
+				EA5257FE1378A826008202AC /* ASIHTTPRequest.h */,
+				EA5257FF1378A826008202AC /* ASIHTTPRequest.m */,
+				EA5258001378A826008202AC /* ASIHTTPRequestConfig.h */,
+				EA5258011378A826008202AC /* ASIHTTPRequestDelegate.h */,
+				EA5258021378A826008202AC /* ASIInputStream.h */,
+				EA5258031378A826008202AC /* ASIInputStream.m */,
+				EA5258041378A826008202AC /* ASINetworkQueue.h */,
+				EA5258051378A826008202AC /* ASINetworkQueue.m */,
+				EA5258061378A826008202AC /* ASIProgressDelegate.h */,
+			);
+			name = REST;
+			sourceTree = "<group>";
+		};
+		EA5D633C1350A7450023D35E = {
+			isa = PBXGroup;
+			children = (
+				EA3C8DDA14AF297A00329F56 /* libz.dylib */,
+				EA5D63531350A7460023D35E /* InstaDaily */,
+				EA5D637C1350A7470023D35E /* InstaDailyTests */,
+				EA5D634A1350A7460023D35E /* Frameworks */,
+				EA5D63481350A7460023D35E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA5D63481350A7460023D35E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D63471350A7460023D35E /* InstaDaily.app */,
+				EA5D63751350A7470023D35E /* InstaDailyTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA5D634A1350A7460023D35E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAB828F6148E214500070216 /* YAJLiOS.framework */,
+				EACC06211385D3B800DF9C6E /* libGoogleAnalytics.a */,
+				EACC06231385D3D800DF9C6E /* libsqlite3.0.dylib */,
+				EA52581F1378A98B008202AC /* libz.1.2.3.dylib */,
+				EA52581E1378A97B008202AC /* CoreGraphics.framework */,
+				EA52581C1378A971008202AC /* MobileCoreServices.framework */,
+				EA52581A1378A968008202AC /* SystemConfiguration.framework */,
+				EA5258181378A95F008202AC /* CFNetwork.framework */,
+				EA5D634B1350A7460023D35E /* UIKit.framework */,
+				EA5D634D1350A7460023D35E /* Foundation.framework */,
+				EA5D634F1350A7460023D35E /* CoreGraphics.framework */,
+				EA5D63511350A7460023D35E /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA5D63531350A7460023D35E /* InstaDaily */ = {
+			isa = PBXGroup;
+			children = (
+				EABF586E137C8BE600C04326 /* Subject */,
+				EA5D63941350A8D40023D35E /* Vote */,
+				EA5D63931350A8D00023D35E /* My Photos */,
+				EA5D63911350A8C60023D35E /* Profile */,
+				EA5D63921350A8CE0023D35E /* Leaderboard */,
+				EA5D635C1350A7460023D35E /* InstaDailyAppDelegate.h */,
+				EA5D635D1350A7460023D35E /* InstaDailyAppDelegate.m */,
+				EABF586F137C8C4400C04326 /* FirstRunView.h */,
+				EABF5870137C8C4400C04326 /* FirstRunView.m */,
+				EABF5871137C8C4400C04326 /* FirstRunView.xib */,
+				EA5D635F1350A7460023D35E /* InstaDaily.xcdatamodeld */,
+				EA5258121378A84C008202AC /* CoreDataTableViewController.h */,
+				EA5258131378A84C008202AC /* CoreDataTableViewController.m */,
+				EACC058C1380300900DF9C6E /* ServerConnect.h */,
+				EACC058D1380300900DF9C6E /* ServerConnect.m */,
+				EA5258141378A84C008202AC /* Prefs.h */,
+				EA5258151378A84C008202AC /* Prefs.m */,
+				EA5D63621350A7460023D35E /* iPhone */,
+				EA5D63691350A7460023D35E /* iPad */,
+				EA5D63541350A7460023D35E /* Supporting Files */,
+			);
+			path = InstaDaily;
+			sourceTree = "<group>";
+		};
+		EA5D63541350A7460023D35E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA300A138C53EC00520FDB /* Media */,
+				EA5257F21378A813008202AC /* REST */,
+				EA5257EE1378A7CD008202AC /* MBProgressHUD.h */,
+				EA5257EF1378A7CD008202AC /* MBProgressHUD.m */,
+				EA52580F1378A83B008202AC /* Reachability.h */,
+				EA5258101378A83B008202AC /* Reachability.m */,
+				EACC06201385D3B800DF9C6E /* GANTracker.h */,
+				EA5D63551350A7460023D35E /* InstaDaily-Info.plist */,
+				EA5D63561350A7460023D35E /* InfoPlist.strings */,
+				EA5D63591350A7460023D35E /* InstaDaily-Prefix.pch */,
+				EA5D635A1350A7460023D35E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA5D63621350A7460023D35E /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D63631350A7460023D35E /* InstaDailyAppDelegate_iPhone.h */,
+				EA5D63641350A7460023D35E /* InstaDailyAppDelegate_iPhone.m */,
+				EA5D63661350A7460023D35E /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		EA5D63691350A7460023D35E /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D636A1350A7460023D35E /* InstaDailyAppDelegate_iPad.h */,
+				EA5D636B1350A7460023D35E /* InstaDailyAppDelegate_iPad.m */,
+				EA5D636D1350A7460023D35E /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		EA5D637C1350A7470023D35E /* InstaDailyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D63831350A7470023D35E /* InstaDailyTests.h */,
+				EA5D63851350A7470023D35E /* InstaDailyTests.m */,
+				EA5D637D1350A7470023D35E /* Supporting Files */,
+			);
+			path = InstaDailyTests;
+			sourceTree = "<group>";
+		};
+		EA5D637D1350A7470023D35E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA5D637E1350A7470023D35E /* InstaDailyTests-Info.plist */,
+				EA5D637F1350A7470023D35E /* InfoPlist.strings */,
+				EA5D63821350A7470023D35E /* InstaDailyTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA5D63911350A8C60023D35E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EABF5883137C8C9700C04326 /* ProfileView.h */,
+				EABF5884137C8C9700C04326 /* ProfileView.m */,
+				EABF5885137C8C9700C04326 /* ProfileView.xib */,
+				EACC06351387D4CD00DF9C6E /* ProfileSubjectView.h */,
+				EACC06361387D4CD00DF9C6E /* ProfileSubjectView.m */,
+				EACC06371387D4CD00DF9C6E /* ProfileSubjectView.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		EA5D63921350A8CE0023D35E /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				EABF5888137C8CA300C04326 /* LeaderboardView.h */,
+				EABF5889137C8CA300C04326 /* LeaderboardView.m */,
+				EABF588A137C8CA300C04326 /* LeaderboardView.xib */,
+			);
+			name = Leaderboard;
+			sourceTree = "<group>";
+		};
+		EA5D63931350A8D00023D35E /* My Photos */ = {
+			isa = PBXGroup;
+			children = (
+				EABF587E137C8C8A00C04326 /* MyPhotosView.h */,
+				EABF587F137C8C8A00C04326 /* MyPhotosView.m */,
+				EABF5880137C8C8A00C04326 /* MyPhotosView.xib */,
+				EA7FFC99137C97D70067C30A /* PhotoView.h */,
+				EA7FFC9A137C97D70067C30A /* PhotoView.m */,
+				EA7FFC9B137C97D70067C30A /* PhotoView.xib */,
+			);
+			name = "My Photos";
+			sourceTree = "<group>";
+		};
+		EA5D63941350A8D40023D35E /* Vote */ = {
+			isa = PBXGroup;
+			children = (
+				EABF5879137C8C7900C04326 /* VoteView.h */,
+				EABF587A137C8C7900C04326 /* VoteView.m */,
+				EABF587B137C8C7900C04326 /* VoteView.xib */,
+				EA9E3016138D483700CF2AB5 /* VoteInviteView.h */,
+				EA9E3017138D483700CF2AB5 /* VoteInviteView.m */,
+				EA9E3018138D483700CF2AB5 /* VoteInviteView.xib */,
+			);
+			name = Vote;
+			sourceTree = "<group>";
+		};
+		EAAA300A138C53EC00520FDB /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A110013917507005905F7 /* no-photo.png */,
+				EA63319C13903F2900DE2447 /* Default@2x.png */,
+				EA63319A13903F1B00DE2447 /* Default.png */,
+				EA34F6AA138F0D30000EB392 /* deactivate.png */,
+				EA34F6AB138F0D31000EB392 /* add.png */,
+				EA34F6AC138F0D32000EB392 /* activate.png */,
+				EA9E3026138D607F00CF2AB5 /* down.png */,
+				EA9E3027138D607F00CF2AB5 /* up.png */,
+				EA9E2FE6138C64A900CF2AB5 /* 12-eye.png */,
+				EA9E2FE9138C64A900CF2AB5 /* 42-photos.png */,
+				EA9E2FEA138C64A900CF2AB5 /* 53-house.png */,
+				EA9E2FEB138C64A900CF2AB5 /* 85-trophy.png */,
+				EA9E2FEC138C64A900CF2AB5 /* 111-user.png */,
+				EA031EDF139D720200F7B374 /* logo.png */,
+				EA9E3024138D572400CF2AB5 /* login_instagram_light.png */,
+				EAAA3005138C53E600520FDB /* login_instagram_dark.png */,
+				EACC05B01381D87200DF9C6E /* 37x-Checkmark.png */,
+				EA0BB9A01391DE5400A0B777 /* icon-512.png */,
+				EA9E303D138D757600CF2AB5 /* icon-retina.png */,
+				EA9E303B138D756D00CF2AB5 /* icon.png */,
+			);
+			name = Media;
+			sourceTree = "<group>";
+		};
+		EABF586E137C8BE600C04326 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				EABF5874137C8C6700C04326 /* SubjectView.h */,
+				EABF5875137C8C6700C04326 /* SubjectView.m */,
+				EABF5876137C8C6700C04326 /* SubjectView.xib */,
+			);
+			name = Subject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA5D63461350A7460023D35E /* InstaDaily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5D63891350A7470023D35E /* Build configuration list for PBXNativeTarget "InstaDaily" */;
+			buildPhases = (
+				EA5D63431350A7460023D35E /* Sources */,
+				EA5D63441350A7460023D35E /* Frameworks */,
+				EA5D63451350A7460023D35E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstaDaily;
+			productName = InstaDaily;
+			productReference = EA5D63471350A7460023D35E /* InstaDaily.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA5D63741350A7470023D35E /* InstaDailyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5D638C1350A7470023D35E /* Build configuration list for PBXNativeTarget "InstaDailyTests" */;
+			buildPhases = (
+				EA5D63701350A7470023D35E /* Sources */,
+				EA5D63711350A7470023D35E /* Frameworks */,
+				EA5D63721350A7470023D35E /* Resources */,
+				EA5D63731350A7470023D35E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA5D637B1350A7470023D35E /* PBXTargetDependency */,
+			);
+			name = InstaDailyTests;
+			productName = InstaDailyTests;
+			productReference = EA5D63751350A7470023D35E /* InstaDailyTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA5D633E1350A7450023D35E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EA5D63411350A7450023D35E /* Build configuration list for PBXProject "InstaDaily" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA5D633C1350A7450023D35E;
+			productRefGroup = EA5D63481350A7460023D35E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA5D63461350A7460023D35E /* InstaDaily */,
+				EA5D63741350A7470023D35E /* InstaDailyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA5D63451350A7460023D35E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D63581350A7460023D35E /* InfoPlist.strings in Resources */,
+				EA5D63681350A7460023D35E /* MainWindow_iPhone.xib in Resources */,
+				EA5D636F1350A7460023D35E /* MainWindow_iPad.xib in Resources */,
+				EABF5873137C8C4400C04326 /* FirstRunView.xib in Resources */,
+				EABF5878137C8C6700C04326 /* SubjectView.xib in Resources */,
+				EABF587D137C8C7900C04326 /* VoteView.xib in Resources */,
+				EABF5882137C8C8A00C04326 /* MyPhotosView.xib in Resources */,
+				EABF5887137C8C9700C04326 /* ProfileView.xib in Resources */,
+				EABF588C137C8CA300C04326 /* LeaderboardView.xib in Resources */,
+				EA7FFC9D137C97D70067C30A /* PhotoView.xib in Resources */,
+				EACC05B11381D87300DF9C6E /* 37x-Checkmark.png in Resources */,
+				EACC06391387D4CD00DF9C6E /* ProfileSubjectView.xib in Resources */,
+				EAAA3007138C53E600520FDB /* login_instagram_dark.png in Resources */,
+				EA9E2FED138C64A900CF2AB5 /* 12-eye.png in Resources */,
+				EA9E2FF0138C64A900CF2AB5 /* 42-photos.png in Resources */,
+				EA9E2FF1138C64A900CF2AB5 /* 53-house.png in Resources */,
+				EA9E2FF2138C64A900CF2AB5 /* 85-trophy.png in Resources */,
+				EA9E2FF3138C64A900CF2AB5 /* 111-user.png in Resources */,
+				EA9E301A138D483700CF2AB5 /* VoteInviteView.xib in Resources */,
+				EA9E3025138D572400CF2AB5 /* login_instagram_light.png in Resources */,
+				EA9E3028138D607F00CF2AB5 /* down.png in Resources */,
+				EA9E3029138D607F00CF2AB5 /* up.png in Resources */,
+				EA9E303C138D756D00CF2AB5 /* icon.png in Resources */,
+				EA9E303E138D757600CF2AB5 /* icon-retina.png in Resources */,
+				EA34F6AD138F0D32000EB392 /* deactivate.png in Resources */,
+				EA34F6AE138F0D32000EB392 /* add.png in Resources */,
+				EA34F6AF138F0D32000EB392 /* activate.png in Resources */,
+				EA63319B13903F1B00DE2447 /* Default.png in Resources */,
+				EA63319D13903F2900DE2447 /* Default@2x.png in Resources */,
+				EA6A110113917507005905F7 /* no-photo.png in Resources */,
+				EA0BB9A11391DE5400A0B777 /* icon-512.png in Resources */,
+				EA031EE0139D720200F7B374 /* logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D63721350A7470023D35E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D63811350A7470023D35E /* InfoPlist.strings in Resources */,
+				EA5D63841350A7470023D35E /* InstaDailyTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EA5D63731350A7470023D35E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA5D63431350A7460023D35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D635B1350A7460023D35E /* main.m in Sources */,
+				EA5D635E1350A7460023D35E /* InstaDailyAppDelegate.m in Sources */,
+				EA5D63611350A7460023D35E /* InstaDaily.xcdatamodeld in Sources */,
+				EA5D63651350A7460023D35E /* InstaDailyAppDelegate_iPhone.m in Sources */,
+				EA5D636C1350A7460023D35E /* InstaDailyAppDelegate_iPad.m in Sources */,
+				EA5257F01378A7CD008202AC /* MBProgressHUD.m in Sources */,
+				EA5258071378A826008202AC /* ASIAuthenticationDialog.m in Sources */,
+				EA5258081378A826008202AC /* ASIDataCompressor.m in Sources */,
+				EA5258091378A826008202AC /* ASIDataDecompressor.m in Sources */,
+				EA52580A1378A826008202AC /* ASIDownloadCache.m in Sources */,
+				EA52580B1378A826008202AC /* ASIFormDataRequest.m in Sources */,
+				EA52580C1378A826008202AC /* ASIHTTPRequest.m in Sources */,
+				EA52580D1378A826008202AC /* ASIInputStream.m in Sources */,
+				EA52580E1378A826008202AC /* ASINetworkQueue.m in Sources */,
+				EA5258111378A83B008202AC /* Reachability.m in Sources */,
+				EA5258161378A84C008202AC /* CoreDataTableViewController.m in Sources */,
+				EA5258171378A84C008202AC /* Prefs.m in Sources */,
+				EABF5872137C8C4400C04326 /* FirstRunView.m in Sources */,
+				EABF5877137C8C6700C04326 /* SubjectView.m in Sources */,
+				EABF587C137C8C7900C04326 /* VoteView.m in Sources */,
+				EABF5881137C8C8A00C04326 /* MyPhotosView.m in Sources */,
+				EABF5886137C8C9700C04326 /* ProfileView.m in Sources */,
+				EABF588B137C8CA300C04326 /* LeaderboardView.m in Sources */,
+				EA7FFC9C137C97D70067C30A /* PhotoView.m in Sources */,
+				EACC058E1380300A00DF9C6E /* ServerConnect.m in Sources */,
+				EACC06381387D4CD00DF9C6E /* ProfileSubjectView.m in Sources */,
+				EA9E3019138D483700CF2AB5 /* VoteInviteView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA5D63701350A7470023D35E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5D63861350A7470023D35E /* InstaDailyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA5D637B1350A7470023D35E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA5D63461350A7460023D35E /* InstaDaily */;
+			targetProxy = EA5D637A1350A7470023D35E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA5D63561350A7460023D35E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5D63571350A7460023D35E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA5D63661350A7460023D35E /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5D63671350A7460023D35E /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		EA5D636D1350A7460023D35E /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5D636E1350A7460023D35E /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+		EA5D637F1350A7470023D35E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA5D63801350A7470023D35E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA5D63871350A7470023D35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "InstaDaily - competitions for Instagram";
+				PROVISIONING_PROFILE = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EA5D63881350A7470023D35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "InstaDaily - competitions for Instagram";
+				PROVISIONING_PROFILE = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B6393622-58B6-478D-B1D8-5C1BF62337FA";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EA5D638A1350A7470023D35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaDaily/InstaDaily-Prefix.pch";
+				INFOPLIST_FILE = "InstaDaily/InstaDaily-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InstaDaily\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				"PROVISIONING_PROFILE[sdk=*]" = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA5D638B1350A7470023D35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marek Mikuliszyn (BTP3AVBETR)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaDaily/InstaDaily-Prefix.pch";
+				INFOPLIST_FILE = "InstaDaily/InstaDaily-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InstaDaily\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC9D918A-3116-4C89-AA9A-628DA2BCFAA4";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA5D638D1350A7470023D35E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaDaily.app/InstaDaily";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaDailyTests/InstaDailyTests-Prefix.pch";
+				INFOPLIST_FILE = "InstaDailyTests/InstaDailyTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		EA5D638E1350A7470023D35E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaDaily.app/InstaDaily";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaDailyTests/InstaDailyTests-Prefix.pch";
+				INFOPLIST_FILE = "InstaDailyTests/InstaDailyTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		EAAD18191391D7D1006985C0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marek Mikuliszyn";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marek Mikuliszyn";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "InstaDaily - competitions for Instagram";
+				PROVISIONING_PROFILE = "8832E6B4-7FB6-49D5-80DA-CDA6A78BBCA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8832E6B4-7FB6-49D5-80DA-CDA6A78BBCA4";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		EAAD181A1391D7D1006985C0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Marek Mikuliszyn";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Marek Mikuliszyn";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaDaily/InstaDaily-Prefix.pch";
+				INFOPLIST_FILE = "InstaDaily/InstaDaily-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/InstaDaily\"",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8832E6B4-7FB6-49D5-80DA-CDA6A78BBCA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8832E6B4-7FB6-49D5-80DA-CDA6A78BBCA4";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		EAAD181B1391D7D1006985C0 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InstaDaily.app/InstaDaily";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InstaDailyTests/InstaDailyTests-Prefix.pch";
+				INFOPLIST_FILE = "InstaDailyTests/InstaDailyTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA5D63411350A7450023D35E /* Build configuration list for PBXProject "InstaDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D63871350A7470023D35E /* Debug */,
+				EA5D63881350A7470023D35E /* Release */,
+				EAAD18191391D7D1006985C0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		EA5D63891350A7470023D35E /* Build configuration list for PBXNativeTarget "InstaDaily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D638A1350A7470023D35E /* Debug */,
+				EA5D638B1350A7470023D35E /* Release */,
+				EAAD181A1391D7D1006985C0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		EA5D638C1350A7470023D35E /* Build configuration list for PBXNativeTarget "InstaDailyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA5D638D1350A7470023D35E /* Debug */,
+				EA5D638E1350A7470023D35E /* Release */,
+				EAAD181B1391D7D1006985C0 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA5D635F1350A7460023D35E /* InstaDaily.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA5D63601350A7460023D35E /* InstaDaily.xcdatamodel */,
+			);
+			currentVersion = EA5D63601350A7460023D35E /* InstaDaily.xcdatamodel */;
+			path = InstaDaily.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA5D633E1350A7450023D35E /* Project object */;
+}
